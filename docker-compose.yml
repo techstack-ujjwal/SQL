@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:17     # latest stable major version
+    container_name: postgres-learn
+
+    environment:
+      POSTGRES_USER: ujjwal
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: learning_db
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
