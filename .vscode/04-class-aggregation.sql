@@ -66,3 +66,15 @@ GROUP BY brand
 HAVING SUM(units_sold) > 30;
 
 -- it is a where key word for  having
+
+
+
+--order of wrirting
+-- SELECT
+-- FROM
+-- JOIN
+-- WHERE
+-- GROUP BY 
+-- HAVING
+-- ORDER BY
+-- LIMIT
